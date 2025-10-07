@@ -1,4 +1,5 @@
-📋 Checklist de Instalação - Web App
+# 📋 Checklist de Instalação - Web App
+
 Um simples Web App para técnicos de campo preencherem um checklist de instalação ou reparo de serviços. O aplicativo gera um relatório de texto formatado, pronto para ser copiado e compartilhado em aplicativos de mensagem (como WhatsApp) ou e-mail.
 
 Este projeto foi desenvolvido com foco na simplicidade e facilidade de uso, sem a necessidade de um back-end ou instalação de aplicativos via loja.
@@ -58,7 +59,7 @@ Na seção "Build and deployment", em "Source", selecione Deploy from a branch.
 
 Escolha a branch main (ou master) e a pasta / (root). Clique em Save.
 
-Aguarde alguns minutos e o GitHub irá gerar um link público para o seu aplicativo (ex: https://seunome.github.io/checklist-app/).
+Aguarde alguns minutos e o GitHub irá gerar um link público para o seu aplicativo.
 
 Compartilhe este link com os técnicos. Eles podem acessá-lo de qualquer navegador de celular e até criar um atalho na tela inicial.
 
