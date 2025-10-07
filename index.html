@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Instalação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Checklist de Instalação / Reparo</h1>
+            <p>Envie as informações abaixo 👇</p>
+        </header>
+
+        <form id="checklist-form">
+            <section>
+                <h2>🧍‍♂️ 1️⃣ Dados do Cliente</h2>
+                <label for="nome-cliente">👤 Nome completo:</label>
+                <input type="text" id="nome-cliente" required>
+
+                <label for="endereco-cliente">🏠 Rua e número:</label>
+                <input type="text" id="endereco-cliente" required>
+
+                <label for="localizacao-cliente">📍 Localização (link do maps):</label>
+                <div class="location-group">
+                    <input type="text" id="localizacao-cliente" placeholder="Clique em 'Obter Localização'" required>
+                    <button type="button" class="location-btn" data-target="localizacao-cliente">Obter</button>
+                </div>
+            </section>
+
+            <section>
+                <h2>🧵 2️⃣ CTO / Rede Externa</h2>
+                <label for="localizacao-cto">📍 Localização da CTO (link do maps):</label>
+                <div class="location-group">
+                    <input type="text" id="localizacao-cto" placeholder="Clique em 'Obter Localização'" required>
+                    <button type="button" class="location-btn" data-target="localizacao-cto">Obter</button>
+                </div>
+
+                <label for="foto-cto">📸 Foto da CTO:</label>
+                <input type="file" id="foto-cto" accept="image/*" required>
+
+                <label for="cor-fibra">🎨 Cor da fibra:</label>
+                <input type="text" id="cor-fibra" required>
+
+                <label for="possui-splitter">🔀 Possui splitter?</label>
+                <select id="possui-splitter">
+                    <option value="✅ Sim">✅ Sim</option>
+                    <option value="❌ Não" selected>❌ Não</option>
+                </select>
+
+                <label for="porta-utilizada">🔌 Número da porta utilizada pelo cliente:</label>
+                <input type="number" id="porta-utilizada" required>
+            </section>
+
+            <section>
+                <h2>🏡 3️⃣ Casa do Cliente</h2>
+                <label for="localizacao-casa">📍 Localização da casa (link do maps):</label>
+                <div class="location-group">
+                    <input type="text" id="localizacao-casa" placeholder="Clique em 'Obter Localização'" required>
+                    <button type="button" class="location-btn" data-target="localizacao-casa">Obter</button>
+                </div>
+
+                <label for="foto-frente-casa">🏘 Foto da frente da casa:</label>
+                <input type="file" id="foto-frente-casa" accept="image/*" required>
+            </section>
+
+            <section>
+                <h2>📶 4️⃣ Instalação Interna</h2>
+                <label for="foto-instalacao">🧰 Foto da instalação do equipamento (ont/router):</label>
+                <input type="file" id="foto-instalacao" accept="image/*" required>
+
+                <label for="foto-mac">🏷 Foto do MAC do equipamento:</label>
+                <input type="file" id="foto-mac" accept="image/*" required>
+
+                <label for="nome-wifi">💡 Nome do Wi-Fi:</label>
+                <input type="text" id="nome-wifi" required>
+
+                <label for="senha-wifi">🔑 Senha do Wi-Fi:</label>
+                <input type="text" id="senha-wifi" required>
+            </section>
+
+            <section>
+                <h2>✅ 5️⃣ Finalização</h2>
+                <label for="teste-navegacao">🌐 Teste de navegação realizado com sucesso?</label>
+                <select id="teste-navegacao">
+                    <option value="✅ Sim">✅ Sim</option>
+                    <option value="❌ Não">❌ Não</option>
+                </select>
+
+                <label for="cliente-ciente">📞 Cliente ciente e satisfeito com o serviço?</label>
+                <select id="cliente-ciente">
+                    <option value="✅ Sim">✅ Sim</option>
+                    <option value="❌ Não">❌ Não</option>
+                </select>
+            </section>
+
+            <button type="submit" class="submit-btn">Gerar Relatório</button>
+        </form>
+
+        <div id="result-container" class="hidden">
+            <h2>Relatório Gerado:</h2>
+            <textarea id="report-output" readonly></textarea>
+            <button id="copy-btn" type="button">Copiar Texto</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

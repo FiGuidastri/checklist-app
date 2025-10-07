@@ -1,0 +1,150 @@
+/* Importa uma fonte bonita do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Configurações gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header p {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Estilo das seções */
+section {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+/* Estilo dos campos do formulário */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+/* Grupo do botão de localização */
+.location-group {
+    display: flex;
+    gap: 10px;
+}
+
+.location-group input {
+    flex-grow: 1; /* Faz o input ocupar o espaço restante */
+}
+
+.location-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap; /* Impede que o texto quebre linha */
+}
+
+.location-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Botão principal */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Container do resultado */
+.hidden {
+    display: none;
+}
+
+#result-container {
+    margin-top: 20px;
+    border-top: 2px dashed #ccc;
+    padding-top: 20px;
+}
+
+#report-output {
+    height: 300px;
+    background-color: #f9f9f9;
+}
+
+#copy-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#copy-btn:hover {
+    background-color: #117a8b;
+}
